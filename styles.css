@@ -680,3 +680,15 @@ html {
         max-width: 98vw;
     }
 } 
+
+/* we are adding for section */
+.section {
+  display: none; /* hide all sections initially */
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.section.active {
+  display: block; /* show only the active section */
+}
