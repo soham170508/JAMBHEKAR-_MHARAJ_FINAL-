@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+      <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net;
+    style-src 'self' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self' data: https://images.unsplash.com;
+    frame-src https://www.google.com https://www.google.com/maps;
+    object-src 'none';
+    upgrade-insecure-requests;
+  ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="site_title">Shri Jambhekar Maharaj Mandir</title>
@@ -52,7 +62,7 @@
                     <img src="Images/main_samadhi_devi.jpeg" alt="Temple 4" class="photo-img" data-key="photo4_alt">
 
                 </div>
-                <div id="photo-modal" class="photo-modal">
+                <div id="photo-modal" class="photo-modal" tabindex="-1" role="dialog" aria-modal="true">
                     <span class="modal-close">&times;</span>
                     <button class="modal-prev">&#10094;</button>
                     <img class="modal-img" src="" alt="" />
@@ -449,10 +459,11 @@
                 <!-- <section id="contact" class="section"> -->
                 <h2 data-key="contact_title">Contact</h2>
                 <p data-key="contact_text">For inquiries, blessings, or seva opportunities, please contact us at:</p>
+                
                 <ul>
                     <li><a href="tel:+919768203033" data-key="contact_phone">Phone: +91 9768203033</a></li>
-                    <li><a href="mailto:jambhekarmaharaj@gmail.com" data-key="contact_email">Email:
-                            jambhekarmaharaj@gmail.com</a></li>
+                    <li><a href="mailto:jambhekarmaharaj@gmail.com" data-key="contact_email">
+                            </a></li>
                 </ul>
                 <!-- </section> -->
             </div>
@@ -467,7 +478,7 @@
                 <div id="qr-modal" class="qr-modal">
                     <div class="qr-modal-content">
                         <span class="qr-modal-close">&times;</span>
-                        <img src="Images/qr.jpeg" alt="UPI QR Code for Shri Jambhekar Maharaj Mandir" class="qr-img" />
+                        <img src="serve-qr.php" alt="UPI QR Code for Shri Jambhekar Maharaj Mandir" class="qr-img" />
                         <div class="qr-details">
                             <div><strong>Merchant Name:</strong> SHRI JAMBHEKAR MAHARAJ S</div>
                             <div><strong>UPI ID:</strong> shrijambhekar@sbi</div>
@@ -499,9 +510,10 @@
                 reserved.</div>
         </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js"></script>
     <script src="translations.js"></script>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>

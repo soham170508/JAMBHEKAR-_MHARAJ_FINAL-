@@ -1,31 +1,55 @@
 
+//added for bot dtection
+(function detectBots() {
+  try {
+    const isBot =
+      !navigator.cookieEnabled ||
+      !navigator.userAgent ||
+      navigator.userAgent.toLowerCase().includes('bot') ||
+      navigator.plugins.length === 0;
 
+    if (isBot) {
+      alert("Access denied. Bots are not allowed.");
+      window.location.href = "https://google.com";
+    }
+  } catch (e) {
+    console.warn("Bot detection failed:", e);
+  }
+})();
 
 let currentLang = 'en';
 
 function translatePage(lang) {
+    // ✅ Validate input
+    const allowedLangs = ['en', 'mr'];
+    if (!allowedLangs.includes(lang)) return;
+
     currentLang = lang;
     document.documentElement.lang = lang;
+
     // Update all elements with data-key
     document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
-        if (translations[lang][key]) {
+        const translatedText = translations[lang][key];
+        if (translatedText) {
             if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                el.placeholder = translations[lang][key];
+                el.placeholder = translatedText;
             } else if (el.tagName === 'TITLE') {
-                document.title = translations[lang][key];
+                document.title = translatedText;
             } else if (el.hasAttribute('alt')) {
-                el.alt = translations[lang][key];
+                el.alt = translatedText;
             } else {
-                el.textContent = translations[lang][key];
+                el.textContent = translatedText;
             }
         }
     });
+
     // Highlight active language button
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 }
+
 
 // Language toggle event
 function setupLanguageToggle() {
@@ -106,13 +130,37 @@ function setupPhotoModal() {
     const nextBtn = modal.querySelector('.modal-next');
     const footer = document.querySelector('footer');
 
+    modal.addEventListener('keydown', (e) => {
+        if (e.key !== 'Tab') return;
+
+        const focusableElements = modal.querySelectorAll('button, [tabindex]:not([tabindex="-1"])');
+        const firstEl = focusableElements[0];
+        const lastEl = focusableElements[focusableElements.length - 1];
+
+        if (e.shiftKey) {
+            // Shift + Tab
+            if (document.activeElement === firstEl) {
+                e.preventDefault();
+                lastEl.focus();
+            }
+        } else {
+            // Tab
+            if (document.activeElement === lastEl) {
+                e.preventDefault();
+                firstEl.focus();
+            }
+        }
+    });
+
+
     let currentIndex = 0;
 
     function showModal(index) {
         currentIndex = index;
-        modalImg.src = images[currentIndex].src;
-        modalImg.alt = images[currentIndex].alt;
+        modalImg.src = DOMPurify.sanitize(images[currentIndex].src);
+        modalImg.alt =DOMPurify.sanitize( images[currentIndex].alt);
         modal.classList.add('active');
+        modal.focus();
         document.body.style.overflow = 'hidden';
         if (footer) footer.style.display = 'none';
 
@@ -209,7 +257,8 @@ function setupSection() {
         item.addEventListener('click', () => {
             const targetId = item.getAttribute('data-target');
             const targetSection = document.getElementById(targetId);
-            //console.log("3"+targetId)
+            if(targetId && item.getAttribute('data-target')){
+                //console.log("3"+targetId)
             // Hide all sections
             //  sections.forEach(section => section.classList.remove('active'));
             if (targetSection) {
@@ -218,8 +267,11 @@ function setupSection() {
             } else {
                 console.warn(`Section with ID ${targetId} not found.`);
             }
-            // Show the selected section
-            document.getElementById(targetId).classList.add('active');
+          
+            }else{
+                    console.warn(`Section with ID2 ${targetId} not found.`);
+            }
+          
         });
     });
 }
