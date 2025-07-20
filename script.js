@@ -64,7 +64,7 @@ function setupSectionAnimations() {
 // Smooth scroll for nav links
 function setupSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href').slice(1);
             const target = document.getElementById(targetId);
             if (target) {
@@ -104,6 +104,8 @@ function setupPhotoModal() {
     const closeBtn = modal.querySelector('.modal-close');
     const prevBtn = modal.querySelector('.modal-prev');
     const nextBtn = modal.querySelector('.modal-next');
+    const footer = document.querySelector('footer');
+
     let currentIndex = 0;
 
     function showModal(index) {
@@ -112,10 +114,13 @@ function setupPhotoModal() {
         modalImg.alt = images[currentIndex].alt;
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
+        if (footer) footer.style.display = 'none';
+
     }
     function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
+        if (footer) footer.style.display = 'block';
     }
     function showPrev() {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -146,14 +151,20 @@ function setupQRModal() {
     const showBtn = document.getElementById('show-qr-btn');
     const modal = document.getElementById('qr-modal');
     const closeBtn = modal.querySelector('.qr-modal-close');
+    const footer = document.querySelector('footer');
+
     function openModal() {
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
+        if (footer) footer.style.display = 'none';
     }
+
     function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
+        if (footer) footer.style.display = 'block';
     }
+
     showBtn.addEventListener('click', openModal);
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => {
@@ -175,30 +186,63 @@ document.addEventListener('DOMContentLoaded', () => {
     setupPhotoModal();
     setupQRModal();
     setupSection();
-}); 
+    setFooter();
+});
 
 //we are adding this for section on off code
 
 
 function setupSection() {
-   // console.log("1")
+    // console.log("1")
     const menuItems = document.querySelectorAll('#menu li');
     const sections = document.querySelectorAll('.section');
-  //  console.log("start")
-//console.log(menuItems);
-//console.log(sections);
-//console.log("end");
+    //  console.log("start")
+    //console.log(menuItems);
+    //console.log(sections);
+    //console.log("end");
+    const defaultSection = document.getElementById('section1');
+    if (defaultSection) {
+        defaultSection.classList.add('active');
+    }
     menuItems.forEach(item => {
-       console.log(item.getAttribute('data-target')) 
+        console.log(item.getAttribute('data-target'))
         item.addEventListener('click', () => {
             const targetId = item.getAttribute('data-target');
- //console.log("3"+targetId)
+            const targetSection = document.getElementById(targetId);
+            //console.log("3"+targetId)
             // Hide all sections
-            sections.forEach(section => section.classList.remove('active'));
-
+            //  sections.forEach(section => section.classList.remove('active'));
+            if (targetSection) {
+                sections.forEach(section => section.classList.remove('active'));
+                targetSection.classList.add('active');
+            } else {
+                console.warn(`Section with ID ${targetId} not found.`);
+            }
             // Show the selected section
             document.getElementById(targetId).classList.add('active');
         });
     });
 }
+
+
+function setFooter() {
+    const photoModal = document.getElementById('photo-modal');
+    const modalClose = document.querySelector('.modal-close');
+
+    photoImages.forEach(img => {
+        img.addEventListener('click', () => {
+            photoModal.style.display = 'block';
+            footer.style.display = 'none';
+        });
+    });
+
+    // Close modal and show footer again
+    if (modalClose) {
+        modalClose.addEventListener('click', () => {
+            photoModal.style.display = 'none';
+            footer.style.display = 'block';
+        });
+    }
+}
+
 

@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="site_title">Shri Jambhekar Maharaj Mandir</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus:wght@400;700&family=Baloo+Bhaijaan+2:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marcellus:wght@400;700&family=Baloo+Bhaijaan+2:wght@700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="background-effect"></div>
     <header>
-        <nav class="navbar" >
+        <nav class="navbar">
             <div class="nav-logo" data-key="site_title">श्री जांभेकर महाराज मंदिर</div>
             <ul class="nav-links" id="menu">
-                <li data-target="section1"><a href="#photos" data-key="nav_photos" >Photos</a></li>
-                <li data-target="section2"><a href="#biography" data-key="nav_biography" >Biography</a></li>
-                <li data-target="section3"><a href="#samadhi" data-key="nav_samadhi" >Samadhi Mandir</a></li>
-                <li data-target="section4"><a href="#temple within the premises" data-key="nav_small_temples" >Temples within the premises</a></li>
-                <li data-target="section5"><a href="#events" data-key="nav_events" >Events</a></li>
-                <li data-target="section6"><a href="#books" data-key="nav_books" >Books</a></li>
-                <li data-target="section7"><a href="#contact" data-key="nav_contact" >Contact</a></li>
-                <li data-target="section8"><a href="#donate" data-key="nav_donate" >Donate</a></li>
-                <li  data-target="section9"><a href="#location" data-key="nav_location">Location</a></li>
+                <li data-target="section1"><a href="#photos" data-key="nav_photos">Photos</a></li>
+                <li data-target="section2"><a href="#biography" data-key="nav_biography">Biography</a></li>
+                <li data-target="section3"><a href="#samadhi" data-key="nav_samadhi">Samadhi Mandir</a></li>
+                <li data-target="section4"><a href="#temple within the premises" data-key="nav_small_temples">Temples
+                        within the premises</a></li>
+                <li data-target="section5"><a href="#events" data-key="nav_events">Events</a></li>
+                <li data-target="section6"><a href="#books" data-key="nav_books">Books</a></li>
+                <li data-target="section7"><a href="#contact" data-key="nav_contact">Contact</a></li>
+                <li data-target="section8"><a href="#donate" data-key="nav_donate">Donate</a></li>
+                <li data-target="section9"><a href="#location" data-key="nav_location">Location</a></li>
             </ul>
             <div class="lang-toggle">
                 <button id="lang-marathi" class="lang-btn" data-lang="mr">मराठी</button>
@@ -32,249 +37,471 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="mantra-marquee">
-            <span>ॐ श्रीराम कृष्णनाथा दयासागरा कृपा करा | दयासागरा कृपा करा</span>
-        </div>
-        <div  id="section1" class="section">
-         <!-- <section id="photos" class="section"> -->
-            <h2 data-key="photos_title">Temple Photos</h2>
-            <div class="photos-scroll">
-                <img src="Images/mandir_entrance.jpeg" alt="Temple 1" class="photo-img" data-key="photo1_alt">
-                <img src="Images/TEMPLE_VIEW_WITH_KALAS.png" alt="Temple 2" class="photo-img" data-key="photo2_alt">
-                <img src="Images/samadhi_mandir.jpg" alt="Temple 3" class="photo-img" data-key="photo3_alt">
-                <img src="Images/main_samadhi_devi.jpeg" alt="Temple 4" class="photo-img" data-key="photo4_alt">
-                
+    <div>
+        <main>
+            <div class="mantra-marquee">
+                <span>ॐ श्रीराम कृष्णनाथा दयासागरा कृपा करा | दयासागरा कृपा करा</span>
             </div>
-            <div id="photo-modal" class="photo-modal">
-                <span class="modal-close">&times;</span>
-                <button class="modal-prev">&#10094;</button>
-                <img class="modal-img" src="" alt="" />
-                <button class="modal-next">&#10095;</button>
+            <div id="section1" class="section">
+                <!-- <section id="photos" class="section"> -->
+                <h2 data-key="photos_title">Temple Photos</h2>
+                <div class="photos-scroll">
+                    <img src="Images/mandir_entrance.jpeg" alt="Temple 1" class="photo-img" data-key="photo1_alt">
+                    <img src="Images/TEMPLE_VIEW_WITH_KALAS.png" alt="Temple 2" class="photo-img" data-key="photo2_alt">
+                    <img src="Images/samadhi_mandir.jpg" alt="Temple 3" class="photo-img" data-key="photo3_alt">
+                    <img src="Images/main_samadhi_devi.jpeg" alt="Temple 4" class="photo-img" data-key="photo4_alt">
+
+                </div>
+                <div id="photo-modal" class="photo-modal">
+                    <span class="modal-close">&times;</span>
+                    <button class="modal-prev">&#10094;</button>
+                    <img class="modal-img" src="" alt="" />
+                    <button class="modal-next">&#10095;</button>
+                </div>
+                <!--/section-->
             </div>
-         <!--/section-->    
-        </div>  
-        <div  id="section2" class="section">
-         <!--section id="biography" class="section"-->
-            <h2 data-key="biography_title">Biography</h2>
-            <p data-key="biography_text">Shri Ramkrishna Jambhekar Maharaj was a noble saint and a devoted follower of Lord Dattatreya and Swami Samarth of Akkalkot. He dedicated his entire life to spiritual practice and service to humanity. Born in Maharashtra, he spread the message of devotion and selfless service. Maharaj was known for his humility, simplicity, and deep compassion for all beings. He guided countless devotees on the path of righteousness and faith. He often emphasized truth, charity, and remembrance of God. People believe he performed many miracles to protect and bless his devotees. His words and presence gave hope and strength to the needy. Through his blessings, many found relief from troubles and gained spiritual wisdom. He had immense faith in Swami Samarth and always encouraged devotees to surrender to the Guru. His Samadhi Mandir is a sacred place where devotees come to seek blessings. The temple atmosphere is filled with peace and devotion. Devotees celebrate his life and teachings with great respect every year. His legacy continues to inspire generations towards a pure and meaningful life. Even today, his devotees believe he protects them like a loving guardian. Maharaj’s life shows us the power of faith, service, and surrender to the Divine.</p>
-        <!--/section-->
-        </div>
-       <div  id="section3" class="section">
-         <!-- <section id="samadhi" class="section"> -->
-            <h2 data-key="samadhi_title">Samadhi Mandir</h2>
-            <p data-key="samadhi_text">Shri Ramkrishna Jambhekar Maharaj’s Samadhi Mandir in Dadar is a small but powerful place of peace hidden amidst Mumbai’s busy life. Many people pass by daily without knowing the divine presence it holds. Inside the Mandir, the calm atmosphere gives instant relief from the city’s noise and stress. Elderly devotees sit here for hours, praying silently for their family’s well-being. Young students come to seek blessings for exams, jobs, and future goals. Local families believe Maharaj’s blessings protect their home from problems and bring harmony. There are countless stories of people who faced tough times and found hope here. Some say Maharaj appears in dreams when people are confused or worried. It is not about big miracles alone people feel he listens to small prayers too. During festivals, bhajans and simple rituals bring the community together like one family. Anyone, regardless of caste or background, can sit in front of Maharaj’s Samadhi and find peace. Many devotees visit Siddhivinayak first and then come here to complete their prayers. The temple trust helps keep the place clean and open for all who wish to visit. Small offerings like flowers, coconuts, and prayers are enough to feel connected. This Mandir reminds us that faith does not need a grand building it needs true devotion. As more people learn about Maharaj’s life, this humble Samadhi Mandir will keep giving strength and hope to all who come with faith.</p>
-        <!-- </section> -->
-       </div>
-       <div id="section4" class="section">
-          <!-- <section id="small-temples" class="section"> -->
-            <h2 data-key="small_temples_title">Temples within the Premises</h2>
-            <div class="temples-list">
-                <div class="temple-card">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Datta Mandir" class="temple-img" data-key="temple1_alt">
-                    <h3 data-key="temple1_title">Shri Datta Mandir</h3>
-                    <p data-key="temple1_text">The Shri Datta Mandir is dedicated to Lord Dattatreya, the embodiment of the trinity—Brahma, Vishnu, and Mahesh. Devotees visit to seek blessings for wisdom, protection, and spiritual growth. The serene atmosphere inspires meditation and devotion.</p>
-                </div>
-                <div class="temple-card">
-                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Ganesh Mandir" class="temple-img" data-key="temple2_alt">
-                    <h3 data-key="temple2_title">Shri Ganesh Mandir</h3>
-                    <p data-key="temple2_text">Shri Ganesh Mandir is a sacred shrine for Lord Ganesha, the remover of obstacles. Devotees offer prayers for success, prosperity, and the removal of difficulties. The temple is especially vibrant during Ganesh Chaturthi celebrations.</p>
-                </div>
-                <div class="temple-card">
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Hanuman Mandir" class="temple-img" data-key="temple3_alt">
-                    <h3 data-key="temple3_title">Shri Hanuman Mandir</h3>
-                    <p data-key="temple3_text">The Shri Hanuman Mandir is devoted to Lord Hanuman, symbolizing strength, devotion, and courage. Devotees come here to pray for protection, health, and the power to overcome challenges in life.</p>
-                </div>
+            <div id="section2" class="section">
+                <!--section id="biography" class="section"-->
+                <h2 data-key="biography_title">Biography</h2>
+                <p data-key="biography_text">Shri Ramkrishna Jambhekar Maharaj was a noble saint and a devoted follower
+                    of Lord Dattatreya and Swami Samarth of Akkalkot. He dedicated his entire life to spiritual practice
+                    and service to humanity. Born in Maharashtra, he spread the message of devotion and selfless
+                    service. Maharaj was known for his humility, simplicity, and deep compassion for all beings. He
+                    guided countless devotees on the path of righteousness and faith. He often emphasized truth,
+                    charity, and remembrance of God. People believe he performed many miracles to protect and bless his
+                    devotees. His words and presence gave hope and strength to the needy. Through his blessings, many
+                    found relief from troubles and gained spiritual wisdom. He had immense faith in Swami Samarth and
+                    always encouraged devotees to surrender to the Guru. His Samadhi Mandir is a sacred place where
+                    devotees come to seek blessings. The temple atmosphere is filled with peace and devotion. Devotees
+                    celebrate his life and teachings with great respect every year. His legacy continues to inspire
+                    generations towards a pure and meaningful life. Even today, his devotees believe he protects them
+                    like a loving guardian. Maharaj’s life shows us the power of faith, service, and surrender to the
+                    Divine.</p>
+                <!--/section-->
             </div>
-        <!-- </section> -->
-       </div>
-      <div  id="section5" class="section">
-             <!-- <section id="events" class="section"> -->
-            <h2 data-key="events_title">Events</h2>
-            <div class="event-block">
-                <h3 data-key="kirtan_festival_title">Kirtan Festival — On Occasion of Shravan Month (2025-2026)</h3>
-                <div data-key="kirtan_festival_desc">
-                    Shree Jambhekar Maharaj Seva Samiti<br>
-                    Shree Jambhekar Maharaj Samadhi Mandir, Param Pujya Jambhekar Maharaj Path, Dadar Chowpatty, Mumbai - 400028
+            <div id="section3" class="section">
+                <!-- <section id="samadhi" class="section"> -->
+                <h2 data-key="samadhi_title">Samadhi Mandir</h2>
+                <p data-key="samadhi_text">Shri Ramkrishna Jambhekar Maharaj’s Samadhi Mandir in Dadar is a small but
+                    powerful place of peace hidden amidst Mumbai’s busy life. Many people pass by daily without knowing
+                    the divine presence it holds. Inside the Mandir, the calm atmosphere gives instant relief from the
+                    city’s noise and stress. Elderly devotees sit here for hours, praying silently for their family’s
+                    well-being. Young students come to seek blessings for exams, jobs, and future goals. Local families
+                    believe Maharaj’s blessings protect their home from problems and bring harmony. There are countless
+                    stories of people who faced tough times and found hope here. Some say Maharaj appears in dreams when
+                    people are confused or worried. It is not about big miracles alone people feel he listens to small
+                    prayers too. During festivals, bhajans and simple rituals bring the community together like one
+                    family. Anyone, regardless of caste or background, can sit in front of Maharaj’s Samadhi and find
+                    peace. Many devotees visit Siddhivinayak first and then come here to complete their prayers. The
+                    temple trust helps keep the place clean and open for all who wish to visit. Small offerings like
+                    flowers, coconuts, and prayers are enough to feel connected. This Mandir reminds us that faith does
+                    not need a grand building it needs true devotion. As more people learn about Maharaj’s life, this
+                    humble Samadhi Mandir will keep giving strength and hope to all who come with faith.</p>
+                <!-- </section> -->
+            </div>
+            <div id="section4" class="section">
+                <!-- <section id="small-temples" class="section"> -->
+                <h2 data-key="small_temples_title">Temples within the Premises</h2>
+                <div class="temples-list">
+                    <div class="temple-card">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                            alt="Datta Mandir" class="temple-img" data-key="temple1_alt">
+                        <h3 data-key="temple1_title">Shri Datta Mandir</h3>
+                        <p data-key="temple1_text">The Shri Datta Mandir is dedicated to Lord Dattatreya, the embodiment
+                            of the trinity—Brahma, Vishnu, and Mahesh. Devotees visit to seek blessings for wisdom,
+                            protection, and spiritual growth. The serene atmosphere inspires meditation and devotion.
+                        </p>
+                    </div>
+                    <div class="temple-card">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                            alt="Ganesh Mandir" class="temple-img" data-key="temple2_alt">
+                        <h3 data-key="temple2_title">Shri Ganesh Mandir</h3>
+                        <p data-key="temple2_text">Shri Ganesh Mandir is a sacred shrine for Lord Ganesha, the remover
+                            of obstacles. Devotees offer prayers for success, prosperity, and the removal of
+                            difficulties. The temple is especially vibrant during Ganesh Chaturthi celebrations.</p>
+                    </div>
+                    <div class="temple-card">
+                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+                            alt="Hanuman Mandir" class="temple-img" data-key="temple3_alt">
+                        <h3 data-key="temple3_title">Shri Hanuman Mandir</h3>
+                        <p data-key="temple3_text">The Shri Hanuman Mandir is devoted to Lord Hanuman, symbolizing
+                            strength, devotion, and courage. Devotees come here to pray for protection, health, and the
+                            power to overcome challenges in life.</p>
+                    </div>
                 </div>
-                <div data-key="kirtan_festival_schedule_title">Program Schedule:</div>
-                <div class="kirtan-table-wrapper">
-                    <table class="kirtan-table" data-key="kirtan_festival_table">
+                <!-- </section> -->
+            </div>
+            <div id="section5" class="section">
+                <!-- <section id="events" class="section"> -->
+                <h2 data-key="events_title">Events</h2>
+                <div class="event-block">
+                    <h3 data-key="kirtan_festival_title">Kirtan Festival — On Occasion of Shravan Month (2025-2026)</h3>
+                    <div data-key="kirtan_festival_desc">
+                        Shree Jambhekar Maharaj Seva Samiti<br>
+                        Shree Jambhekar Maharaj Samadhi Mandir, Param Pujya Jambhekar Maharaj Path, Dadar Chowpatty,
+                        Mumbai - 400028
+                    </div>
+                    <div data-key="kirtan_festival_schedule_title">Program Schedule:</div>
+                    <div class="kirtan-table-wrapper">
+                        <table class="kirtan-table" data-key="kirtan_festival_table">
+                            <thead>
+                                <tr>
+                                    <th data-key="date_col">Date</th>
+                                    <th data-key="day_col">Day</th>
+                                    <th data-key="kirtankar_col">Kirtankar’s Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25/07/2025</td>
+                                    <td data-key="fri">Friday</td>
+                                    <td data-key="kirtan1_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>26/07/2025</td>
+                                    <td data-key="sat">Saturday</td>
+                                    <td data-key="kirtan2_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>27/07/2025</td>
+                                    <td data-key="sun">Sunday</td>
+                                    <td data-key="kirtan3_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>28/07/2025</td>
+                                    <td data-key="mon">Monday</td>
+                                    <td data-key="kirtan4_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>29/07/2025</td>
+                                    <td data-key="tue">Tuesday</td>
+                                    <td data-key="kirtan5_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>30/07/2025</td>
+                                    <td data-key="wed">Wednesday</td>
+                                    <td data-key="kirtan6_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>31/07/2025</td>
+                                    <td data-key="thu">Thursday</td>
+                                    <td data-key="kirtan7_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>01/08/2025</td>
+                                    <td data-key="fri">Friday</td>
+                                    <td data-key="kirtan8_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>02/08/2025</td>
+                                    <td data-key="sat">Saturday</td>
+                                    <td data-key="kirtan9_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>03/08/2025</td>
+                                    <td data-key="sun">Sunday</td>
+                                    <td data-key="kirtan10_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>04/08/2025</td>
+                                    <td data-key="mon">Monday</td>
+                                    <td data-key="kirtan11_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>05/08/2025</td>
+                                    <td data-key="tue">Tuesday</td>
+                                    <td data-key="kirtan12_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>06/08/2025</td>
+                                    <td data-key="wed">Wednesday</td>
+                                    <td data-key="kirtan13_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>07/08/2025</td>
+                                    <td data-key="thu">Thursday</td>
+                                    <td data-key="kirtan14_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>08/08/2025</td>
+                                    <td data-key="fri">Friday</td>
+                                    <td data-key="kirtan15_name"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" data-key="further_programs">Further Programs:</td>
+                                </tr>
+                                <tr>
+                                    <td>09/08/2025</td>
+                                    <td data-key="sat">Saturday</td>
+                                    <td data-key="kirtan16_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>10/08/2025</td>
+                                    <td data-key="sun">Sunday</td>
+                                    <td data-key="kirtan17_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>11/08/2025</td>
+                                    <td data-key="mon">Monday</td>
+                                    <td data-key="kirtan18_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>12/08/2025</td>
+                                    <td data-key="tue">Tuesday</td>
+                                    <td data-key="kirtan19_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>13/08/2025</td>
+                                    <td data-key="wed">Wednesday</td>
+                                    <td data-key="kirtan20_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>14/08/2025</td>
+                                    <td data-key="thu">Thursday</td>
+                                    <td data-key="kirtan21_name"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" data-key="special_event">Special Event — Shri Krishna Janmashtami
+                                        (7:00 PM to 8:30 PM):</td>
+                                </tr>
+                                <tr>
+                                    <td>15/08/2025</td>
+                                    <td data-key="fri">Friday</td>
+                                    <td data-key="kirtan22_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>17/08/2025</td>
+                                    <td data-key="sun">Sunday</td>
+                                    <td data-key="kirtan23_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>18/08/2025</td>
+                                    <td data-key="mon">Monday</td>
+                                    <td data-key="kirtan24_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>19/08/2025</td>
+                                    <td data-key="tue">Tuesday</td>
+                                    <td data-key="kirtan25_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>20/08/2025</td>
+                                    <td data-key="wed">Wednesday</td>
+                                    <td data-key="kirtan26_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>21/08/2025</td>
+                                    <td data-key="thu">Thursday</td>
+                                    <td data-key="kirtan27_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>22/08/2025</td>
+                                    <td data-key="fri">Friday</td>
+                                    <td data-key="kirtan28_name"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-key="kirtan_festival_footer">🙏🏼 All devotees are humbly requested to attend and take
+                        maximum spiritual benefit of the programs.</div>
+                </div>
+                <div class="event-block">
+                    <h3 data-key="regular_programs_title">Weekly, Monthly, Annual Programs and Festivals</h3>
+                    <div data-key="regular_programs_desc">
+                        Shree Jambhekar Maharaj Seva Samiti<br>
+                        Shree Jambhekar Maharaj Samadhi Mandir, Dadar Chowpatty, Mumbai - 400028
+                    </div>
+                    <div data-key="weekly_programs_title">Weekly Programs:</div>
+                    <ul class="events-list">
+                        <li data-key="weekly1">Every Thursday at 7:30 PM – Shri’s Kirtan</li>
+                        <li data-key="weekly2">Every Sunday at 8:30 AM – Naam Smaran and Discourse</li>
+                    </ul>
+                    <div data-key="monthly_programs_title">Monthly Programs:</div>
+                    <ul class="events-list">
+                        <li data-key="monthly1">Ekadashi (Shukla / Krishna Paksha) – Naam Smaran and Discourse at 8:00
+                            AM</li>
+                        <li data-key="monthly2">Amavasya / Pournima – Evening Kirtan at 7:00 PM</li>
+                    </ul>
+                    <div data-key="annual_programs_title">Annual Festivals (Utsav):</div>
+                    <table class="events-table" data-key="annual_programs_table">
                         <thead>
                             <tr>
-                                <th data-key="date_col">Date</th>
-                                <th data-key="day_col">Day</th>
-                                <th data-key="kirtankar_col">Kirtankar’s Name</th>
+                                <th data-key="festival_col">Festival/Event</th>
+                                <th data-key="details_col">Details</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>25/07/2025</td><td data-key="fri">Friday</td><td data-key="kirtan1_name"></td></tr>
-                            <tr><td>26/07/2025</td><td data-key="sat">Saturday</td><td data-key="kirtan2_name"></td></tr>
-                            <tr><td>27/07/2025</td><td data-key="sun">Sunday</td><td data-key="kirtan3_name"></td></tr>
-                            <tr><td>28/07/2025</td><td data-key="mon">Monday</td><td data-key="kirtan4_name"></td></tr>
-                            <tr><td>29/07/2025</td><td data-key="tue">Tuesday</td><td data-key="kirtan5_name"></td></tr>
-                            <tr><td>30/07/2025</td><td data-key="wed">Wednesday</td><td data-key="kirtan6_name"></td></tr>
-                            <tr><td>31/07/2025</td><td data-key="thu">Thursday</td><td data-key="kirtan7_name"></td></tr>
-                            <tr><td>01/08/2025</td><td data-key="fri">Friday</td><td data-key="kirtan8_name"></td></tr>
-                            <tr><td>02/08/2025</td><td data-key="sat">Saturday</td><td data-key="kirtan9_name"></td></tr>
-                            <tr><td>03/08/2025</td><td data-key="sun">Sunday</td><td data-key="kirtan10_name"></td></tr>
-                            <tr><td>04/08/2025</td><td data-key="mon">Monday</td><td data-key="kirtan11_name"></td></tr>
-                            <tr><td>05/08/2025</td><td data-key="tue">Tuesday</td><td data-key="kirtan12_name"></td></tr>
-                            <tr><td>06/08/2025</td><td data-key="wed">Wednesday</td><td data-key="kirtan13_name"></td></tr>
-                            <tr><td>07/08/2025</td><td data-key="thu">Thursday</td><td data-key="kirtan14_name"></td></tr>
-                            <tr><td>08/08/2025</td><td data-key="fri">Friday</td><td data-key="kirtan15_name"></td></tr>
-                            <tr><td colspan="3" data-key="further_programs">Further Programs:</td></tr>
-                            <tr><td>09/08/2025</td><td data-key="sat">Saturday</td><td data-key="kirtan16_name"></td></tr>
-                            <tr><td>10/08/2025</td><td data-key="sun">Sunday</td><td data-key="kirtan17_name"></td></tr>
-                            <tr><td>11/08/2025</td><td data-key="mon">Monday</td><td data-key="kirtan18_name"></td></tr>
-                            <tr><td>12/08/2025</td><td data-key="tue">Tuesday</td><td data-key="kirtan19_name"></td></tr>
-                            <tr><td>13/08/2025</td><td data-key="wed">Wednesday</td><td data-key="kirtan20_name"></td></tr>
-                            <tr><td>14/08/2025</td><td data-key="thu">Thursday</td><td data-key="kirtan21_name"></td></tr>
-                            <tr><td colspan="3" data-key="special_event">Special Event — Shri Krishna Janmashtami (7:00 PM to 8:30 PM):</td></tr>
-                            <tr><td>15/08/2025</td><td data-key="fri">Friday</td><td data-key="kirtan22_name"></td></tr>
-                            <tr><td>17/08/2025</td><td data-key="sun">Sunday</td><td data-key="kirtan23_name"></td></tr>
-                            <tr><td>18/08/2025</td><td data-key="mon">Monday</td><td data-key="kirtan24_name"></td></tr>
-                            <tr><td>19/08/2025</td><td data-key="tue">Tuesday</td><td data-key="kirtan25_name"></td></tr>
-                            <tr><td>20/08/2025</td><td data-key="wed">Wednesday</td><td data-key="kirtan26_name"></td></tr>
-                            <tr><td>21/08/2025</td><td data-key="thu">Thursday</td><td data-key="kirtan27_name"></td></tr>
-                            <tr><td>22/08/2025</td><td data-key="fri">Friday</td><td data-key="kirtan28_name"></td></tr>
-
+                            <tr>
+                                <td data-key="festival1">Guru Pournima</td>
+                                <td data-key="festival1_details">Evening 7:30 PM – Kirtan, Naam Smaran, Mahaprasad</td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival2">Gudi Padwa (Hindu New Year)</td>
+                                <td data-key="festival2_details">Morning 7:30 AM – Aarti & Discourse</td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival3">Ram Navami</td>
+                                <td data-key="festival3_details">Evening 7:30 PM – Shri Ram Janmotsav, Kirtan</td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival4">Shravan Month</td>
+                                <td data-key="festival4_details">Entire month – Daily Kirtan from 7:00 PM to 8:30 PM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival5">Shri Krishna Janmashtami</td>
+                                <td data-key="festival5_details">Night 10:30 PM – Janmotsav Celebration, Kirtan</td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival6">Navratri Festival</td>
+                                <td data-key="festival6_details">Morning 8:00 AM – Devi Stuti; Evening – Kirtan</td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival7">Dussehra</td>
+                                <td data-key="festival7_details">Morning 8:30 AM – Shastra Poojan, Naam Smaran</td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival8">Kartik Ekadashi (Prabodhini)</td>
+                                <td data-key="festival8_details">Morning 7:00 AM – Haripath & Discourse</td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival9">Magh Shukla Navami</td>
+                                <td data-key="festival9_details">Shri Jambhekar Maharaj Punyatithi – Poojan & Mahaprasad
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-key="festival10">Ram Navami to Hanuman Jayanti</td>
+                                <td data-key="festival10_details">Shri Ram Naam Saptah (Week-long Chanting)</td>
+                            </tr>
                         </tbody>
                     </table>
+                    <div data-key="regular_programs_footer">🙏🏼 All devotees are warmly invited to attend these holy
+                        programs.</div>
                 </div>
-                <div data-key="kirtan_festival_footer">🙏🏼 All devotees are humbly requested to attend and take maximum spiritual benefit of the programs.</div>
+                <!-- </section> -->
             </div>
-            <div class="event-block">
-                <h3 data-key="regular_programs_title">Weekly, Monthly, Annual Programs and Festivals</h3>
-                <div data-key="regular_programs_desc">
-                    Shree Jambhekar Maharaj Seva Samiti<br>
-                    Shree Jambhekar Maharaj Samadhi Mandir, Dadar Chowpatty, Mumbai - 400028
+            <div id="section6" class="section">
+                <!-- <section id="books" class="section"> -->
+                <h2 data-key="books_title">Books</h2>
+                <div class="books-list">
+                    <div class="book-card">
+                        <img src="Images/MAHARJ_BOOK_1.jpeg" alt="Book 1 Cover" class="book-img" data-key="book1_alt">
+                        <div class="book-info">
+                            <h3 data-key="book1_title">परमपूज्य श्रीरामकृष्ण महाराज जांभेकर यांचे संक्षिप्त
+                                चरित्र<br><span class="en-title">A Brief Biography of the Most Revered Shri Ramkrishna
+                                    Maharaj Jambhekar</span></h3>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img src="Images/appa_mharj.jpg" alt="Book 2 Cover" class="book-img" data-key="book2_alt">
+                        <div class="book-info">
+                            <h3 data-key="book2_title">श्री आप्पा महाराज जगदाळे चरित्र<br><span class="en-title">Shri
+                                    Appa Maharaj Jagdale Biography</span></h3>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img src="Images/mharaj_book_2.jpeg" alt="Book 3 Cover" class="book-img" data-key="book3_alt">
+                        <div class="book-info">
+                            <h3 data-key="book3_title">श्रीरामकृष्ण महाराज जांभेकर पहारजलापेका चरित्र, भक्तांच्या आठवणी
+                                व अनुभव<br><span class="en-title">Shri Ramakrishna Maharaj Jambhekar's biography,
+                                    memories and experiences of devotees.</span></h3>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img src="Images/namdev_mharaj_kelakr_book.jpeg" alt="Book 4 Cover" class="book-img"
+                            data-key="book4_alt">
+                        <div class="book-info">
+                            <h3 data-key="book4_title">श्रीनामदेव महाराज केळकर चरित्र, भक्तांच्या आठवणी व अनुभव<br><span
+                                    class="en-title">Shri Namdev Maharaj Kelkar's biography, devotees' memories and
+                                    experiences</span></h3>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img src="Images/kashi_mandir.jpeg" alt="Book 5 Cover" class="book-img" data-key="book5_alt">
+                        <div class="book-info">
+                            <h3 data-key="book5_title">माऊली काशीबाई चव्हाण चरित्र, भक्तांच्या आठवणी व अनुभव<br><span
+                                    class="en-title">Mauli Kashibai Chavan's biography, memories and experiences of the
+                                    devotees</span></h3>
+                        </div>
+                    </div>
+                    <div class="book-card magazine-card">
+                        <img src="Images/sanjjevan_lahari_traimasik.jpeg" alt="Quarterly Magazine Cover"
+                            class="book-img" data-key="magazine_alt">
+                        <div class="book-info">
+                            <h3 data-key="magazine_title">त्रैमासिक संजीवन लहरी<br><span class="en-title">Quarterly
+                                    Sanjeevani Lhahari</span></h3>
+                            <p data-key="magazine_note">Note: The magazine's format and content may change from time to
+                                time. Each issue features new articles, stories, and spiritual insights for devotees.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div data-key="weekly_programs_title">Weekly Programs:</div>
-                <ul class="events-list">
-                    <li data-key="weekly1">Every Thursday at 7:30 PM – Shri’s Kirtan</li>
-                    <li data-key="weekly2">Every Sunday at 8:30 AM – Naam Smaran and Discourse</li>
+                <div class="books-order-note">
+                    <span data-key="books_order_note">For orders and more details, contact: </span>
+                    <a href="tel:+919768203033" data-key="books_order_phone">Phone: +91 9768203033</a>
+                    <span data-key="books_order_delivery"> (Delivery charges apply for home delivery. Books can be
+                        delivered all over India through post.)</span>
+                </div>
+                <!-- </section> -->
+            </div>
+            <div id="section7" class="section">
+                <!-- <section id="contact" class="section"> -->
+                <h2 data-key="contact_title">Contact</h2>
+                <p data-key="contact_text">For inquiries, blessings, or seva opportunities, please contact us at:</p>
+                <ul>
+                    <li><a href="tel:+919768203033" data-key="contact_phone">Phone: +91 9768203033</a></li>
+                    <li><a href="mailto:jambhekarmaharaj@gmail.com" data-key="contact_email">Email:
+                            jambhekarmaharaj@gmail.com</a></li>
                 </ul>
-                <div data-key="monthly_programs_title">Monthly Programs:</div>
-                <ul class="events-list">
-                    <li data-key="monthly1">Ekadashi (Shukla / Krishna Paksha) – Naam Smaran and Discourse at 8:00 AM</li>
-                    <li data-key="monthly2">Amavasya / Pournima – Evening Kirtan at 7:00 PM</li>
-                </ul>
-                <div data-key="annual_programs_title">Annual Festivals (Utsav):</div>
-                <table class="events-table" data-key="annual_programs_table">
-                    <thead>
-                        <tr><th data-key="festival_col">Festival/Event</th><th data-key="details_col">Details</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td data-key="festival1">Guru Pournima</td><td data-key="festival1_details">Evening 7:30 PM – Kirtan, Naam Smaran, Mahaprasad</td></tr>
-                        <tr><td data-key="festival2">Gudi Padwa (Hindu New Year)</td><td data-key="festival2_details">Morning 7:30 AM – Aarti & Discourse</td></tr>
-                        <tr><td data-key="festival3">Ram Navami</td><td data-key="festival3_details">Evening 7:30 PM – Shri Ram Janmotsav, Kirtan</td></tr>
-                        <tr><td data-key="festival4">Shravan Month</td><td data-key="festival4_details">Entire month – Daily Kirtan from 7:00 PM to 8:30 PM</td></tr>
-                        <tr><td data-key="festival5">Shri Krishna Janmashtami</td><td data-key="festival5_details">Night 10:30 PM – Janmotsav Celebration, Kirtan</td></tr>
-                        <tr><td data-key="festival6">Navratri Festival</td><td data-key="festival6_details">Morning 8:00 AM – Devi Stuti; Evening – Kirtan</td></tr>
-                        <tr><td data-key="festival7">Dussehra</td><td data-key="festival7_details">Morning 8:30 AM – Shastra Poojan, Naam Smaran</td></tr>
-                        <tr><td data-key="festival8">Kartik Ekadashi (Prabodhini)</td><td data-key="festival8_details">Morning 7:00 AM – Haripath & Discourse</td></tr>
-                        <tr><td data-key="festival9">Magh Shukla Navami</td><td data-key="festival9_details">Shri Jambhekar Maharaj Punyatithi – Poojan & Mahaprasad</td></tr>
-                        <tr><td data-key="festival10">Ram Navami to Hanuman Jayanti</td><td data-key="festival10_details">Shri Ram Naam Saptah (Week-long Chanting)</td></tr>
-                    </tbody>
-                </table>
-                <div data-key="regular_programs_footer">🙏🏼 All devotees are warmly invited to attend these holy programs.</div>
+                <!-- </section> -->
             </div>
-        <!-- </section> -->
-      </div>
-   <div id="section6" class="section">
-      <!-- <section id="books" class="section"> -->
-            <h2 data-key="books_title">Books</h2>
-            <div class="books-list">
-                <div class="book-card">
-                    <img src="Images/MAHARJ_BOOK_1.jpeg" alt="Book 1 Cover" class="book-img" data-key="book1_alt">
-                    <div class="book-info">
-                        <h3 data-key="book1_title">परमपूज्य श्रीरामकृष्ण महाराज जांभेकर यांचे संक्षिप्त चरित्र<br><span class="en-title">A Brief Biography of the Most Revered Shri Ramkrishna Maharaj Jambhekar</span></h3>
+            <div id="section8" class="section">
+                <!-- <section id="donate" class="section"> -->
+                <h2 data-key="donate_title">Donate</h2>
+                <p data-key="donate_text">Support the temple’s activities and charitable work. Donations are welcome via
+                    UPI, bank transfer, or in person at the temple office.</p>
+                <div class="donate-qr-preview">
+                    <button id="show-qr-btn" type="button" class="show-qr-btn">Show QR Code</button>
+                </div>
+                <div id="qr-modal" class="qr-modal">
+                    <div class="qr-modal-content">
+                        <span class="qr-modal-close">&times;</span>
+                        <img src="Images/qr.jpeg" alt="UPI QR Code for Shri Jambhekar Maharaj Mandir" class="qr-img" />
+                        <div class="qr-details">
+                            <div><strong>Merchant Name:</strong> SHRI JAMBHEKAR MAHARAJ S</div>
+                            <div><strong>UPI ID:</strong> shrijambhekar@sbi</div>
+                        </div>
                     </div>
                 </div>
-                <div class="book-card">
-                    <img src="Images/appa_mharj.jpg" alt="Book 2 Cover" class="book-img" data-key="book2_alt">
-                    <div class="book-info">
-                        <h3 data-key="book2_title">श्री आप्पा महाराज जगदाळे चरित्र<br><span class="en-title">Shri Appa Maharaj Jagdale Biography</span></h3>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <img src="Images/mharaj_book_2.jpeg" alt="Book 3 Cover" class="book-img" data-key="book3_alt">
-                    <div class="book-info">
-                        <h3 data-key="book3_title">श्रीरामकृष्ण महाराज जांभेकर पहारजलापेका चरित्र, भक्तांच्या आठवणी व अनुभव<br><span class="en-title">Shri Ramakrishna Maharaj Jambhekar's biography, memories and experiences of devotees.</span></h3>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <img src="Images/namdev_mharaj_kelakr_book.jpeg" alt="Book 4 Cover" class="book-img" data-key="book4_alt">
-                    <div class="book-info">
-                        <h3 data-key="book4_title">श्रीनामदेव महाराज केळकर चरित्र, भक्तांच्या आठवणी व अनुभव<br><span class="en-title">Shri Namdev Maharaj Kelkar's biography, devotees' memories and experiences</span></h3>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <img src="Images/kashi_mandir.jpeg" alt="Book 5 Cover" class="book-img" data-key="book5_alt">
-                    <div class="book-info">
-                        <h3 data-key="book5_title">माऊली काशीबाई चव्हाण चरित्र, भक्तांच्या आठवणी व अनुभव<br><span class="en-title">Mauli Kashibai Chavan's biography, memories and experiences of the devotees</span></h3>
-                    </div>
-                </div>
-                <div class="book-card magazine-card">
-                    <img src="Images/sanjjevan_lahari_traimasik.jpeg" alt="Quarterly Magazine Cover" class="book-img" data-key="magazine_alt">
-                    <div class="book-info">
-                        <h3 data-key="magazine_title">त्रैमासिक संजीवन लहरी<br><span class="en-title">Quarterly Sanjeevani Lhahari</span></h3>
-                        <p data-key="magazine_note">Note: The magazine's format and content may change from time to time. Each issue features new articles, stories, and spiritual insights for devotees.</p>
-                    </div>
-                </div>
+                <!-- </section>     -->
             </div>
-            <div class="books-order-note">
-                <span data-key="books_order_note">For orders and more details, contact: </span>
-                <a href="tel:+919768203033" data-key="books_order_phone">Phone: +91 9768203033</a>
-                <span data-key="books_order_delivery"> (Delivery charges apply for home delivery. Books can be delivered all over India through post.)</span>
-            </div>
-        <!-- </section> -->
-   </div>
-      <div id="section7" class="section">
-         <!-- <section id="contact" class="section"> -->
-            <h2 data-key="contact_title">Contact</h2>
-            <p data-key="contact_text">For inquiries, blessings, or seva opportunities, please contact us at:</p>
-            <ul>
-                <li><a href="tel:+919768203033" data-key="contact_phone">Phone: +91 9768203033</a></li>
-                <li><a href="mailto:jambhekarmaharaj@gmail.com" data-key="contact_email">Email: jambhekarmaharaj@gmail.com</a></li>
-            </ul>
-        <!-- </section> -->
-      </div>
-    <div id="section8" class="section"> 
-    <!-- <section id="donate" class="section"> -->
-            <h2 data-key="donate_title">Donate</h2>
-            <p data-key="donate_text">Support the temple’s activities and charitable work. Donations are welcome via UPI, bank transfer, or in person at the temple office.</p>
-            <div class="donate-qr-preview">
-                <button id="show-qr-btn" type="button" class="show-qr-btn">Show QR Code</button>
-            </div>
-            <div id="qr-modal" class="qr-modal">
-                <div class="qr-modal-content">
-                    <span class="qr-modal-close">&times;</span>
-                    <img src="Images/qr.jpeg" alt="UPI QR Code for Shri Jambhekar Maharaj Mandir" class="qr-img" />
-                    <div class="qr-details">
-                        <div><strong>Merchant Name:</strong> SHRI JAMBHEKAR MAHARAJ S</div>
-                        <div><strong>UPI ID:</strong> shrijambhekar@sbi</div>
-                    </div>
+            <div id="section9" class="section">
+                <!-- <section id="location" class="section"> -->
+                <h2 data-key="location_title">Location</h2>
+                <div data-key="location_text">श्रीजांभेकर महाराज सेवा समिती<br>श्रीजांभेकर महाराज समाधी मंदिर, परमपूज्य
+                    जांभेकर महाराज पथ, दादर चौपाटी, मुंबई - ४०००२८</div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.9761751186569!2d72.8338348216717!3d19.023920593002376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cecf34db682b%3A0x5399fe457b92a89b!2sShree%20Ramkrishna%20Jambhekar%20Maharaj%20Samadhi%20Mandir!5e0!3m2!1sen!2sin!4v1750222975656!5m2!1sen!2sin"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" width="100%" height="250" style="border:0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <!-- </section> -->
             </div>
-        <!-- </section>     -->
-    </div> 
-     <div  id="section9" class="section">
-         <!-- <section id="location" class="section"> -->
-            <h2 data-key="location_title">Location</h2>
-            <div data-key="location_text">श्रीजांभेकर महाराज सेवा समिती<br>श्रीजांभेकर महाराज समाधी मंदिर, परमपूज्य जांभेकर महाराज पथ, दादर चौपाटी, मुंबई - ४०००२८</div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.9761751186569!2d72.8338348216717!3d19.023920593002376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cecf34db682b%3A0x5399fe457b92a89b!2sShree%20Ramkrishna%20Jambhekar%20Maharaj%20Samadhi%20Mandir!5e0!3m2!1sen!2sin!4v1750222975656!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        <!-- </section> -->
-     </div>   
-       
-    </main>
-    <footer>
-        <div class="footer-content" data-key="footer_text">© 2025 Shri Jambhekar Maharaj Mandir. All rights reserved.</div>
-    </footer>
-     <script src="translations.js"></script>
+
+        </main>
+    </div>
+    <div>
+        <footer>
+            <div class="footer-content" data-key="footer_text">© 2025 Shri Jambhekar Maharaj Mandir. All rights
+                reserved.</div>
+        </footer>
+    </div>
+
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+
+</html>

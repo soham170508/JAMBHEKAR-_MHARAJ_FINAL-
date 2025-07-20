@@ -1,5 +1,5 @@
 // Translation dictionary
- const translations = {
+const translations = {
     en: {
         site_title: "Shri Jambhekar Maharaj Mandir",
         nav_photos: "Photos",
@@ -108,7 +108,7 @@
         festival9_details: "Shri Jambhekar Maharaj Punyatithi – Poojan & Mahaprasad",
         festival10: "Ram Navami to Hanuman Jayanti",
         festival10_details: "Shri Ram Naam Saptah (Week-long Chanting)",
-        regular_programs_footer: "🙏🏼 All devotees are warmly invited to attend these holy programs.", 
+        regular_programs_footer: "🙏🏼 All devotees are warmly invited to attend these holy programs.",
         kirtan1_name: "H.B.P. Sou. Prajakta Sawalgi",
         kirtan2_name: "H.B.P. Dr. Sou. Sharvaritai Ujjwali (Nashik)",
         kirtan3_name: "Ram Naam Kashi Bhajansandhya",
@@ -136,7 +136,7 @@
         kirtan25_name: "H.B.P. Sou. Sanjivanitai Kashinath",
         kirtan26_name: "H.B.P. Sou. Geetatai Pawar",
         kirtan27_name: "H.B.P. Sou. Swatitai Godbole",
-        kirtan28_name: "H.B.P. Sou. Rekhatai Anantkumar"     
+        kirtan28_name: "H.B.P. Sou. Rekhatai Anantkumar"
     },
     mr: {
         site_title: "श्री जांभेकर महाराज मंदिर",

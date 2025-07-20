@@ -12,16 +12,25 @@ body {
 
 .background-effect {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 0;
     pointer-events: none;
     background: radial-gradient(circle at 50% 20%, #ffe066 0%, #fff8e1 30%, #1a1300 100%);
     opacity: 0.5;
     animation: bgGlow 8s ease-in-out infinite alternate;
 }
+
 @keyframes bgGlow {
-    0% { opacity: 0.5; }
-    100% { opacity: 0.7; }
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
 }
 
 header {
@@ -65,7 +74,8 @@ header {
     transition: background 0.2s, color 0.2s;
 }
 
-.nav-links li a:hover, .nav-links li a.active {
+.nav-links li a:hover,
+.nav-links li a.active {
     background: #ffd70033;
     color: #ffd700;
 }
@@ -87,7 +97,8 @@ header {
     transition: background 0.2s, color 0.2s;
 }
 
-.lang-btn.active, .lang-btn:focus {
+.lang-btn.active,
+.lang-btn:focus {
     background: #ffd700;
     color: #1a1300;
     outline: none;
@@ -100,6 +111,7 @@ header {
     gap: 4px;
     margin-left: 1rem;
 }
+
 .hamburger span {
     width: 28px;
     height: 3px;
@@ -127,19 +139,25 @@ header {
     transform: translateY(40px);
     transition: opacity 0.7s, transform 0.7s;
 }
+
 .section.visible h2 {
     opacity: 1;
     transform: translateY(0);
 }
 
-.section p, .section ul, .section li {
+.section p,
+.section ul,
+.section li {
     font-size: 1.1rem;
     line-height: 1.7;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.7s 0.2s, transform 0.7s 0.2s;
 }
-.section.visible p, .section.visible ul, .section.visible li {
+
+.section.visible p,
+.section.visible ul,
+.section.visible li {
     opacity: 1;
     transform: translateY(0);
 }
@@ -161,12 +179,15 @@ header {
     transition: transform 0.4s, box-shadow 0.4s;
     opacity: 0;
     transform: scale(0.95) translateY(40px);
+
 }
+
 .section.visible .photo-img {
     opacity: 1;
     transform: scale(1) translateY(0);
     transition-delay: 0.2s;
 }
+
 .photo-img:hover {
     transform: scale(1.07) rotate(-1deg);
     box-shadow: 0 0 32px 8px #ffd70088, 0 4px 24px #ffd70033;
@@ -201,17 +222,20 @@ footer {
     .section {
         max-width: 98vw;
     }
+
     .photo-img {
         width: 220px;
         height: 140px;
     }
 }
+
 @media (max-width: 800px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 0.5rem 1rem;
     }
+
     .nav-links {
         flex-direction: column;
         gap: 0.5rem;
@@ -224,24 +248,30 @@ footer {
         padding: 1rem 0;
         display: none;
     }
+
     .nav-links.open {
         display: flex;
     }
+
     .hamburger {
         display: flex;
     }
 }
+
 @media (max-width: 600px) {
     .section {
         padding: 2rem 0.5rem 1.2rem 0.5rem;
     }
+
     .nav-logo {
         font-size: 1.3rem;
     }
+
     .photo-img {
         width: 140px;
         height: 90px;
     }
+
     .section h2 {
         font-size: 1.3rem;
     }
@@ -262,6 +292,7 @@ html {
     margin-left: 0.5rem;
     transition: background 0.2s, color 0.2s;
 }
+
 .admin-link a:hover {
     background: #ffd700;
     color: #1a1300;
@@ -274,6 +305,7 @@ html {
     justify-content: center;
     margin-top: 1.5rem;
 }
+
 .temple-card {
     background: #fff8e1;
     color: #1a1300;
@@ -287,10 +319,12 @@ html {
     position: relative;
     z-index: 1;
 }
+
 .temple-card:hover {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 8px 32px #ffd70055;
 }
+
 .temple-img {
     width: 100%;
     height: 180px;
@@ -300,32 +334,38 @@ html {
     box-shadow: 0 2px 12px #ffd70033;
     transition: box-shadow 0.3s, filter 0.3s;
 }
+
 .temple-img:hover {
     box-shadow: 0 0 24px 6px #ffd70088, 0 2px 12px #ffd70033;
     filter: brightness(1.08) drop-shadow(0 0 8px #ffd70099);
 }
+
 .temple-card h3 {
     color: #ffd700;
     font-family: 'Baloo Bhaijaan 2', cursive;
     margin: 0.7rem 0 0.5rem 0;
     font-size: 1.25rem;
 }
+
 .temple-card p {
     font-size: 1rem;
     line-height: 1.6;
     color: #1a1300;
     margin: 0;
 }
+
 @media (max-width: 900px) {
     .temples-list {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
+
     .temple-card {
         max-width: 98vw;
         min-width: 0;
     }
+
     .temple-img {
         height: 140px;
     }
@@ -338,6 +378,7 @@ html {
     justify-content: center;
     margin-top: 1.5rem;
 }
+
 .book-card {
     background: #fff8e1;
     color: #1a1300;
@@ -354,10 +395,12 @@ html {
     flex-direction: column;
     align-items: center;
 }
+
 .book-card:hover {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 8px 32px #ffd70055;
 }
+
 .book-img {
     width: 100%;
     height: 180px;
@@ -368,6 +411,7 @@ html {
     transition: box-shadow 0.3s, filter 0.3s;
     background: #eee;
 }
+
 .book-info h3 {
     color: #1a1300;
     font-family: 'Baloo Bhaijaan 2', cursive;
@@ -375,6 +419,7 @@ html {
     font-size: 1.1rem;
     font-weight: bold;
 }
+
 .book-info .en-title {
     display: block;
     color: #7c6f00;
@@ -383,22 +428,26 @@ html {
     font-weight: normal;
     margin-top: 0.2rem;
 }
+
 .magazine-card .book-info p {
     font-size: 0.98rem;
     color: #7c6f00;
     margin-top: 0.7rem;
     font-style: italic;
 }
+
 @media (max-width: 900px) {
     .books-list {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
+
     .book-card {
         max-width: 98vw;
         min-width: 0;
     }
+
     .book-img {
         height: 140px;
     }
@@ -414,6 +463,7 @@ html {
     border-radius: 10px;
     box-shadow: 0 2px 12px #ffd70022;
 }
+
 .books-order-note a {
     color: #ffd700;
     font-weight: bold;
@@ -421,15 +471,17 @@ html {
     margin: 0 0.3rem;
     transition: color 0.2s;
 }
+
 .books-order-note a:hover {
     color: #fff8e1;
 }
+
 @media (max-width: 600px) {
     .books-order-note {
         font-size: 0.98rem;
         padding: 0.7rem 0.2rem;
     }
-} 
+}
 
 .event-block {
     background: #fff8e1;
@@ -443,17 +495,22 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+
 .event-block h3 {
     color: #ffd700;
     font-family: 'Baloo Bhaijaan 2', cursive;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
-.kirtan-table-wrapper, .events-table-wrapper {
+
+.kirtan-table-wrapper,
+.events-table-wrapper {
     overflow-x: auto;
     margin: 1.2rem 0;
 }
-.kirtan-table, .events-table {
+
+.kirtan-table,
+.events-table {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto 1.2rem auto;
@@ -462,41 +519,57 @@ html {
     font-size: 1rem;
     box-shadow: 0 2px 12px #ffd70022;
 }
-.kirtan-table th, .kirtan-table td, .events-table th, .events-table td {
+
+.kirtan-table th,
+.kirtan-table td,
+.events-table th,
+.events-table td {
     border: 1px solid #ffd70055;
     padding: 0.5rem 0.7rem;
     text-align: left;
 }
-.kirtan-table th, .events-table th {
+
+.kirtan-table th,
+.events-table th {
     background: #ffd70022;
     color: #7c6f00;
     font-weight: bold;
 }
-.kirtan-table tr:nth-child(even), .events-table tr:nth-child(even) {
+
+.kirtan-table tr:nth-child(even),
+.events-table tr:nth-child(even) {
     background: #fffbe6;
 }
-.kirtan-table tr td[colspan="3"], .events-table tr td[colspan] {
+
+.kirtan-table tr td[colspan="3"],
+.events-table tr td[colspan] {
     background: #fff3b0;
     color: #7c6f00;
     font-weight: bold;
     text-align: center;
 }
+
 @media (max-width: 900px) {
     .event-block {
         padding: 1rem 0.3rem 1.2rem 0.3rem;
     }
-    .kirtan-table, .events-table {
+
+    .kirtan-table,
+    .events-table {
         font-size: 0.95rem;
     }
 }
+
 @media (max-width: 600px) {
     .event-block {
         padding: 0.7rem 0.1rem 0.7rem 0.1rem;
     }
-    .kirtan-table, .events-table {
+
+    .kirtan-table,
+    .events-table {
         font-size: 0.9rem;
     }
-} 
+}
 
 .mantra-marquee {
     width: 100vw;
@@ -505,11 +578,12 @@ html {
     margin: 0 auto 0.5rem auto;
     padding: 0.3rem 0;
     position: relative;
-    z-index: 2;
+
 }
+
 .mantra-marquee span {
     display: inline-block;
-    color: #d32f2f;
+    color: darkred;
     font-size: 1.25rem;
     font-weight: bold;
     font-family: 'Baloo Bhaijaan 2', cursive;
@@ -518,30 +592,42 @@ html {
     letter-spacing: 1.5px;
     text-shadow: 0 1px 8px #fff2f2;
 }
+
 @keyframes mantra-scroll {
-    0% { transform: translateX(100vw); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
 @media (max-width: 600px) {
     .mantra-marquee span {
         font-size: 1rem;
     }
-} 
+}
 
 .photo-modal {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0; top: 0; width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.85);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
     justify-content: center;
     align-items: center;
     flex-direction: row;
     transition: opacity 0.3s;
 }
+
 .photo-modal.active {
     display: flex;
 }
+
 .modal-img {
     max-width: 90vw;
     max-height: 80vh;
@@ -550,6 +636,7 @@ html {
     background: #fff8e1;
     object-fit: contain;
 }
+
 .modal-close {
     position: absolute;
     top: 2.5vh;
@@ -562,11 +649,14 @@ html {
     text-shadow: 0 2px 12px #000;
     transition: color 0.2s;
 }
+
 .modal-close:hover {
     color: #fff8e1;
 }
-.modal-prev, .modal-next {
-    background: rgba(255,255,255,0.15);
+
+.modal-prev,
+.modal-next {
+    background: rgba(255, 255, 255, 0.15);
     border: none;
     color: #ffd700;
     font-size: 2.5rem;
@@ -578,30 +668,37 @@ html {
     z-index: 1100;
     transition: background 0.2s, color 0.2s;
 }
-.modal-prev:hover, .modal-next:hover {
+
+.modal-prev:hover,
+.modal-next:hover {
     background: #ffd700;
     color: #1a1300;
 }
+
 @media (max-width: 700px) {
     .modal-img {
         max-width: 98vw;
         max-height: 60vh;
     }
-    .modal-prev, .modal-next {
+
+    .modal-prev,
+    .modal-next {
         font-size: 2rem;
         padding: 0.3rem 0.7rem;
     }
+
     .modal-close {
         font-size: 2rem;
         top: 1vh;
         right: 2vw;
     }
-} 
+}
 
 .donate-qr-preview {
     text-align: center;
     margin: 1.5rem 0 0.5rem 0;
 }
+
 .show-qr-btn {
     background: #d32f2f;
     color: #fff8e1;
@@ -615,23 +712,30 @@ html {
     box-shadow: 0 2px 8px #ffd70033;
     transition: background 0.2s, color 0.2s;
 }
+
 .show-qr-btn:hover {
     background: #ffd700;
     color: #d32f2f;
 }
+
 .qr-modal {
     display: none;
     position: fixed;
     z-index: 2000;
-    left: 0; top: 0; width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.85);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
     justify-content: center;
     align-items: center;
     transition: opacity 0.3s;
 }
+
 .qr-modal.active {
     display: flex;
 }
+
 .qr-modal-content {
     background: #fff8e1;
     border-radius: 16px;
@@ -642,6 +746,7 @@ html {
     max-width: 95vw;
     max-height: 90vh;
 }
+
 .qr-img {
     width: 320px;
     max-width: 80vw;
@@ -651,6 +756,7 @@ html {
     box-shadow: 0 2px 16px #ffd70033;
     background: #fff;
 }
+
 .qr-modal-close {
     position: absolute;
     top: 1rem;
@@ -662,33 +768,39 @@ html {
     z-index: 2100;
     transition: color 0.2s;
 }
+
 .qr-modal-close:hover {
     color: #ffd700;
 }
+
 .qr-details {
     margin-top: 0.7rem;
     color: #1a1300;
     font-size: 1.08rem;
     font-family: 'Marcellus', serif;
 }
+
 @media (max-width: 600px) {
     .qr-modal-content {
         padding: 1rem 0.3rem 1rem 0.3rem;
     }
+
     .qr-img {
         width: 98vw;
         max-width: 98vw;
     }
-} 
+}
 
 /* we are adding for section */
 .section {
-  display: none; /* hide all sections initially */
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-top: 10px;
+    display: none;
+    /* hide all sections initially */
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
 }
 
 .section.active {
-  display: block; /* show only the active section */
+    display: block;
+    /* show only the active section */
 }
