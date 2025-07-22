@@ -1,5 +1,5 @@
 // Translation dictionary
- const translations = {
+const translations = {
     en: {
         site_title: "Shri Jambhekar Maharaj Mandir",
         nav_photos: "Photos",
@@ -39,7 +39,7 @@
         contact_title: "Contact",
         contact_text: "For inquiries, blessings, or seva opportunities, please contact us at:",
         contact_phone: "Phone: +91 98765 43210",
-        contact_email: "Email: info@jambhekarmaharajmandir.org",
+        contact_email: "Email: sanjeevanlahari1989@gmail.com",
         donate_title: "Donate",
         donate_text: "Support the temple’s activities and charitable work. Donations are welcome via UPI, bank transfer, or in person at the temple office.",
         location_title: "Location",
@@ -108,7 +108,7 @@
         festival9_details: "Shri Jambhekar Maharaj Punyatithi – Poojan & Mahaprasad",
         festival10: "Ram Navami to Hanuman Jayanti",
         festival10_details: "Shri Ram Naam Saptah (Week-long Chanting)",
-        regular_programs_footer: "🙏🏼 All devotees are warmly invited to attend these holy programs.", 
+        regular_programs_footer: "🙏🏼 All devotees are warmly invited to attend these holy programs.",
         kirtan1_name: "H.B.P. Sou. Prajakta Sawalgi",
         kirtan2_name: "H.B.P. Dr. Sou. Sharvaritai Ujjwali (Nashik)",
         kirtan3_name: "Ram Naam Kashi Bhajansandhya",
@@ -136,7 +136,7 @@
         kirtan25_name: "H.B.P. Sou. Sanjivanitai Kashinath",
         kirtan26_name: "H.B.P. Sou. Geetatai Pawar",
         kirtan27_name: "H.B.P. Sou. Swatitai Godbole",
-        kirtan28_name: "H.B.P. Sou. Rekhatai Anantkumar"     
+        kirtan28_name: "H.B.P. Sou. Rekhatai Anantkumar"
     },
     mr: {
         site_title: "श्री जांभेकर महाराज मंदिर",
@@ -178,7 +178,7 @@
         contact_title: "संपर्क",
         contact_text: "विचारणा, आशीर्वाद किंवा सेवा संधीसाठी कृपया संपर्क साधा:",
         contact_phone: "फोन: +९१ ९८७६५ ४३२१०",
-        contact_email: "ईमेल: info@jambhekarmaharajmandir.org",
+        contact_email: "ईमेल: sanjeevanlahari1989@gmail.com",
         donate_title: "दान",
         donate_text: "मंदिराच्या उपक्रमांसाठी व सेवाकार्यासाठी आपले दान स्वागतार्ह आहे. UPI, बँक ट्रान्सफर किंवा प्रत्यक्ष मंदिर कार्यालयात दान देता येईल.",
         location_title: "स्थान",
